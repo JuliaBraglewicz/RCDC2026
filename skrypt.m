@@ -21,7 +21,12 @@ car_position_forward = 0; % [m]
 car_wheelbase = 2.0; % [m]
 
 
+%% parametry state ADAS
+max_brake_when_slowing = 0.3; % [%]
+speed_when_pulling_over = 5; % [m/s]
+rotation_when_pulling_over = deg2rad(20); % [rad]
+distance_threshold = 0.5;   % [m]
+warning_threshold = 1.0;    % [s]
+braking_threshold = 1.7;    % [s]
 
-kat_kierownicy = 0;
-hamulec = 0;
-gaz = 0;
+
