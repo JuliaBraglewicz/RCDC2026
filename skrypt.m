@@ -11,7 +11,7 @@ road_width = 8;   % [m]
 d = Inf;                % [m] dystans do obiektu przed nami
 
 %% parametry początkowe samochodu
-v = 30;                 % [km/h] prędkość początkowa
+v = 30;                 % [m/s] prędkość początkowa
 max_brake_delay = 8;      % [m/s2] maksymalna prędkość hamowania
 max_throtlle_accelleration = 4; % [m/s2]
 max_steering_wheel = pi/6;
@@ -19,6 +19,15 @@ car_width = 2.5; % [m]
 car_position_sides = 4; % [m] from left side
 car_position_forward = 0; % [m]
 car_wheelbase = 2.0; % [m]
+
+%% przykładowy samochód
+v_obejcts = [20 40 40]; % [m/s]
+dist = [100, 100, -50]; % [m]
+y_pos = [2 3 6];
+
+v_2 = 40; % [m/s]
+dist_2 = -50; % [m]
+y_pos_2 = 6;
 
 
 %% parametry state ADAS
